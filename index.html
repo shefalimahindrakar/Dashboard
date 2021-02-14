@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script  src="./script.js"></script>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1>Dashboard</h1>
+
+<div class="dropdown-container">
+<div class="dropdown">
+  <button class="dropbtn">Filter</button>
+  <div class="dropdown-content">
+  <a href="#">City <input id="city-text"  type="text" onkeyup="filterByCity()" /> </a>
+  <a href="#">Cluster <input id="cluster-text"  type="text" onkeyup="filterByCluster()" /> </a>
+  <a href="#">Space <input id="space-text"  type="text" onkeyup="filterBySpace()" /> </a>
+  <a href="#" onclick="displayAll()">All</a>
+
+  </div>
+</div>
+</div>
+
+<table class="container">
+	<thead>
+		<tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Code</th>
+				<th>City</th>
+				<th>Space</th>
+        		<th>Type</th>
+        		<th>Cluster</th>
+        		<th>Registered</th>
+        		<th>Live</th>
+		</tr>
+	</thead>
+	<tbody>
+	</tbody>
+	<script type="text/javascript">createTable();</script>
+</table>
+<!-- partial -->
+
+
+</body>
+</html>

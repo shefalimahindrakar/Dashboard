@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<htmL>
+<head>
+<title>Information</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./style.css">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script  src="./script.js"></script>
+</head>
+<body>
+<div class="content">
+	<h3 id="warehouse-name"></h2>
+	<div class="inner-container">
+		<table class="content-table">
+			<tr><td><label>ID :</label></td><td class="value-column"><input id="column-id" onkeyup="editFunction()"/></td></tr>
+			<tr><td><label>Code :</label></td><td class="value-column"><input id="column-code" onkeyup="editFunction()"/></td></tr>
+			<tr><td><label>City :</label></td><td class="value-column" ><input id="column-city" onkeyup="editFunction()"/></td></tr>
+			<tr><td><label>Type :</label></td><td class="value-column" ><input id="column-type" onkeyup="editFunction()"/></td></tr>
+			<tr><td><label>Space :</label></td><td class="value-column" ><input id="column-space" onkeyup="editFunction()"/></td></tr>
+			<tr><td><label>Cluster :</label></td><td class="value-column" ><input id="column-cluster" onkeyup="editFunction()"/></td></tr>
+			<tr><td><label>Registered :</label></td><td class="value-column"><input id="column-registered" onkeyup="editFunction()"/></td></tr>
+			<tr><td><label>Live :</label></td><td class="value-column"><input id="column-live" onkeyup="editFunction()"/></td></tr>
+		</table>
+		<script type="text/javascript">setValues();</script>
+		<button class="savebtn" onclick="saveFunction()">Save</button>
+		<button class="savebtn" onclick="setValues()">Cancel</button>
+	</div>
+</div>
+</body>
+</htmL>
